@@ -1,5 +1,6 @@
 using DataAccess;
 using DataAccess.Models;
+using DataAccess.Models.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,6 +16,7 @@ namespace OrderAccountSystem
             services.AddSingleton<ApplicationContext, ApplicationContext>();
             services.AddTransient<IOrderRepository, OrderRepository>();
             services.AddSingleton<IClientRepository, ClientRepository>();
+            services.AddSingleton<IProductRepository, ProductRepository>();
             services.AddMvcCore();
             services.AddMvc();
         }
@@ -23,7 +25,7 @@ namespace OrderAccountSystem
         {
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
-
+            
             app.UseStaticFiles();
             app.UseRouting();
             app.UseMvc(b =>

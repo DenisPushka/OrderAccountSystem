@@ -44,3 +44,8 @@ C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\obj\Debug\net5
 C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\obj\Debug\net5.0\OrderAccountSystem.pdb
 C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\obj\Debug\net5.0\OrderAccountSystem.genruntimeconfig.cache
 C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\Api.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\Api.pdb
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\obj\Debug\net5.0\OrderAccountSystem.MvcApplicationPartsAssemblyInfo.cs

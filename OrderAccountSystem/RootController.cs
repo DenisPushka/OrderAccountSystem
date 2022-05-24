@@ -33,31 +33,31 @@ namespace OrderAccountSystem
                     new Order
                     {
                         Price = arProduct[0].Count * arProduct[0].Price, Product = arProduct[0],
-                        ProductId = new List<Guid> {arProduct[0].Id}
+                        ProductId = new List<Guid> {arProduct[0].Id}, QuantityGoods = arProduct[0].Count / 3
                     },
                     new Order
                     {
                         Price = arProduct[1].Count * arProduct[1].Price, Product = arProduct[1],
-                        ProductId = new List<Guid> {arProduct[1].Id}
+                        ProductId = new List<Guid> {arProduct[1].Id}, QuantityGoods = arProduct[1].Count / 3
                     },
                     new Order
                     {
                         Price = arProduct[2].Count * arProduct[2].Price, Product = arProduct[2],
-                        ProductId = new List<Guid> {arProduct[2].Id}
+                        ProductId = new List<Guid> {arProduct[2].Id}, QuantityGoods = arProduct[2].Count / 3
                     }
                 };
-                
+
                 foreach (var order in arOrder)
                     db.Orders.Add(order);
 
                 db.SaveChanges();
+                
                 for (var i = 0; i < arClient.Length; i++)
                 {
-                    arClient[i].OrderId = arOrder[i].Id;
+                    arClient[i].OrderId.Add(arOrder[i].Id);
                     db.Clients.Add(arClient[i]);
                 }
-
-
+                
                 db.SaveChanges();
             }
         }

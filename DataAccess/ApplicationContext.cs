@@ -1,4 +1,6 @@
-﻿using Domain.Models;
+﻿using System;
+using System.Collections.Generic;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess
@@ -26,9 +28,9 @@ namespace DataAccess
         public Client[] CreateTableClients() =>
             new[]
             {
-                new Client {Name = "Denis"},
-                new Client {Name = "Sergey"},
-                new Client {Name = "Gregory"}
+                new Client {Name = "Denis", OrderId = new List<Guid>()},
+                new Client {Name = "Sergey", OrderId = new List<Guid>()},
+                new Client {Name = "Gregory", OrderId = new List<Guid>()}
             };
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>

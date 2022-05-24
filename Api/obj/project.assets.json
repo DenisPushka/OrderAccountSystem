@@ -993,6 +993,7 @@
         "dependencies": {
           "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.17",
+          "Newtonsoft.Json": "13.0.1",
           "Npgsql": "5.0.13",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "5.0.10"
         },
