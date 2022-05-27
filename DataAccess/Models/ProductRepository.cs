@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using DataAccess.Models.Interface;
 using Domain.Models;
@@ -22,6 +23,7 @@ namespace DataAccess.Models
 
         public async Task<List<Product>> Delete(Guid id)
         {
+            await DeleteProductInOrder(id);
             foreach (var product in _db.Products)
                 if (product.Id == id)
                 {
@@ -31,6 +33,19 @@ namespace DataAccess.Models
 
             await _db.SaveChangesAsync();
             return await _db.Products.ToListAsync();
+        }
+
+        private async Task DeleteProductInOrder(Guid id)
+        {
+            foreach (var order in _db.Orders)
+            {
+                var buff = order.ProductId.FirstOrDefault(p => p == id);
+                if (buff.ToString().Equals("00000000-0000-0000-0000-000000000000"))
+                    continue;
+                order.ProductId.Remove(buff);
+            }
+
+            await _db.SaveChangesAsync();
         }
 
         public async Task<List<Product>> Insert(Product product)

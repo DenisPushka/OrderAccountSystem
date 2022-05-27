@@ -10,7 +10,20 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="JavaScriptEngineSwitcher.V8" Version="3.18.1" />
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="React.AspNet" Version="5.2.12" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="App\wwwroot" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <TypeScriptCompile Include="App\src\api\productApi.ts" />
+      <TypeScriptCompile Include="App\src\components\App.tsx" />
+      <TypeScriptCompile Include="App\src\entries\plain.tsx" />
+      <TypeScriptCompile Include="App\src\global.d.ts" />
     </ItemGroup>
 
 </Project>

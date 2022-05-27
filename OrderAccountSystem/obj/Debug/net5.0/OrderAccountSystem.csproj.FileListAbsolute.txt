@@ -49,3 +49,17 @@ C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5
 C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\Api.dll
 C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\Api.pdb
 C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\obj\Debug\net5.0\OrderAccountSystem.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\App\package-lock.json
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\App\package.json
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\App\tsconfig.json
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\AdvancedStringBuilder.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\JavaScriptEngineSwitcher.Core.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\JavaScriptEngineSwitcher.V8.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\JSPool.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\ClearScript.Core.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\ClearScript.V8.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\React.AspNet.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\React.AspNet.Middleware.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\React.Core.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\ru-ru\JavaScriptEngineSwitcher.Core.resources.dll
+C:\Users\User\RiderProjects\OrderAccountSystem\OrderAccountSystem\bin\Debug\net5.0\ru-ru\JavaScriptEngineSwitcher.V8.resources.dll

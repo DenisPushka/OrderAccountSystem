@@ -49,9 +49,8 @@ namespace OrderAccountSystem
 
                 foreach (var order in arOrder)
                     db.Orders.Add(order);
-
                 db.SaveChanges();
-                
+
                 for (var i = 0; i < arClient.Length; i++)
                 {
                     arClient[i].OrderId.Add(arOrder[i].Id);

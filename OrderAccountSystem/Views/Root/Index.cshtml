@@ -1,24 +1,21 @@
-@model List<Domain.Models.Order>;
-
+@page
+@{
+    const string scriptUrl = "/main.bundle.js";
+    const string styleUrl = "/main.bundle.css";
+}
 <!doctype html>
 <html lang="en">
 <head>
+    <link rel="preload" as="script" href="@scriptUrl" asp-append-version="true"/>
+    <link rel="preload" as="style" href="@styleUrl" asp-append-version="true"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>(҂ಠ_ಠ)</title>
+    <link rel="stylesheet" type="text/css" href="@styleUrl" asp-append-version="true"/>
 </head>
 <body>
-<button id="bukvamy">Fetch</button>
-<script >
- const data = document.getElementById("data");
-        function f() { fetch("api/v1").then(x => x.json()).then(d => data.innerHTML = JSON.stringify(d)) }
-        document.getElementById("bukvamy").onclick = f
-                function f1() { fetch("api/v1",{
-                                                  method: 'GET',
-                                                  // body: JSON.stringify(data),
-                                                  headers: {'content-type': 'application/json'},
-                                                }).then(x => x.json()).then(d => data.innerHTML = JSON.stringify(d)) }
-</script>
+<div id="root"> Products</div>
+<script src="@scriptUrl" asp-append-version="true"></script>
 </body>
 </html>
